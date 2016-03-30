@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Routes \\
 
 app.get('/', function(request, response){
-  fs.readFile('./public/home.html',function(error, body){
+  fs.readFile('./public/index.html',function(error, body){
     response.header('Content-Type','text/html')
     response.send(body)
   })
